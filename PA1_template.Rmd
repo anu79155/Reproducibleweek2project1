@@ -1,13 +1,4 @@
----
-output:
-  word_document: default
-  html_document: default
-  pdf_document: default
----
-
-# Reproducible Research::Week 2 Asssignment 1
-
-
+# Reproducible Research::Week 2 Assignment 1
 
 ### Loading and preprocessing the data by unzipping the Activity Monitoring Data then reading and loading the CSV file .
 
@@ -60,9 +51,6 @@ averages <- aggregate(x=list(steps=data$steps), by=list(interval=data$interval),
 
 ##"5-Minute Interval containing the most steps on average:"
 averages[which.max(averages$steps),]
-
-
-
   
 ```
 
